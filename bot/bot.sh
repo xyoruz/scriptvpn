@@ -9,7 +9,7 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/Tomketstore/aut1/main/bot/bot.zip
+wget https://raw.githubusercontent.com/xyoruz/scriptvpn/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
