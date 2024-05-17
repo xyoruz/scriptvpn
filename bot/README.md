@@ -1,1 +1,1 @@
-bot kontol
+NGAPAIN LU HAYOO
