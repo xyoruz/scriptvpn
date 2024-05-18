@@ -336,8 +336,6 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/xyoruz/izin/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/xyoruz/izin/main/ip | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
