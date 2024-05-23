@@ -1,6 +1,6 @@
 [Unit]
 Description=WebSocket
-Documentation=https://github.com/xyoruz
+Documentation=https://github.com/jaka1m
 After=syslog.target network-online.target
 
 [Service]
