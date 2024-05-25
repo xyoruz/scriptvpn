@@ -627,7 +627,6 @@ rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 print_success "Vnstat"
 }
-
 function ins_openvpn(){
 clear
 print_install "Menginstall OpenVPN"
