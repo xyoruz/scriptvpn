@@ -13,10 +13,6 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 purple="\e[0;33m"
-TIMES="10"
-CHATID="6777318112"
-KEY="7103909757:AAGLSwqIqjzq_-IbC6Sd27OIe8ii9tbgzNY"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
   # // Exporint IP AddressInformation
@@ -57,7 +53,7 @@ checking_sc() {
 checking_sc
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e " WELCOME XYR AUTOSCRIPT PREMIUM${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
+echo -e " WELCOME XYR-VPN AUTOSCRIPT PREMIUM${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
 echo -e " PROSES PENGECEKAN IP ADDRESS ANDA !!"
 echo -e "${purple}----------------------------------------------------------${NC}"
 echo -e " ›AUTHOR : ${green}Vnz ${NC}${YELLOW}(${NC}${green}V 3.2${NC}${YELLOW})${NC}"
@@ -336,20 +332,29 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
-    TIMEZONE=$(printf '%(%H:%M:%S)T')
+TIMES="10"
+CHATID="6777318112"
+KEY="7077912626:AAHDkEMHuB9UBkNGGNeBv2R1ZI0amQVF11Y"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+ISP=$(cat /root/.isp)
+CITY=$(cat /root/.city)
+TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b> 🟢 AUTOSCRIPT PREMIUM 🟢</b>
+<b>⚡𝗡𝗢𝗧𝗜𝗙 𝗜𝗡𝗦𝗧𝗔𝗟𝗟 𝗦𝗖𝗥𝗜𝗣𝗧⚡</b>
 <code>────────────────────</code>
-<code>ID     : </code><code>$USRSC</code>
-<code>Domain : </code><code>$domain</code>
-<code>Date   : </code><code>$TIME</code>
-<code>Time   : </code><code>$TIMEZONE</code>
-<code>Ip vps : </code><code>$ipsaya</code>
-<code>Exp Sc : </code><code>$EXPSC</code>
+<code>User     :</code><code>$username</code>
+<code>ISP      :</code><code>$ISP</code>
+<code>CITY     :</code><code>$CITY</code>
+<code>DATE     :</code><code>$DATE</code>
+<code>Time     :</code><code>$TIMEZONE</code>
+<code>Exp Sc.  :</code><code>$exp</code>
 <code>────────────────────</code>
-<i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"💸ᴏʀᴅᴇʀ💸","url":"https://t.me/MAZ_FARUK"},{"text":"💰ɪɴꜱᴛᴀʟʟ💰","url":"https://wa.me/6283805609815"}]]}'
+<b> XYR VPN STORE SCRIPT  </b>
+<code>────────────────────</code>
+<i>Automatic Notifications From Github</i>
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/VnzPro"}]]}' 
+
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -555,7 +560,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit IP & Quota"
-wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
+wget -q https://raw.githubusercontent.com/xhidrolix/scriptvpn/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
 mkdir -p /usr/local/kyt/
@@ -1036,7 +1041,7 @@ echo "===============-[ SCRIPT BY XYR-VPN ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-echo "ThanksYou For Using Script VnzVPN"
+echo "ThanksYou For Using Script XYR-VPN"
 sleep 1
 echo -ne "[ ${yell}COMPLETED${NC} ] PENGINSTALAN SCRIPT SELESAI KETIK Y UNTUK REBOOT ! (y/n)? "
 read answer
