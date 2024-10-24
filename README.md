@@ -14,6 +14,8 @@ CONTACT:
 Telegram: t.me/@STORE_HANZZ
 Wa: wa.me/+6287872750080
 
+![This is an image](https://github.com/xyoruz/X/blob/main/IMG_20240610_002815_026.jpg)
+
 ### INSTALL SCRIPT 
 ```
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/premi.sh && chmod +x premi.sh && ./premi.sh
