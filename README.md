@@ -14,7 +14,7 @@ CONTACT:
 Telegram: t.me/@STORE_HANZZ
 Wa: wa.me/+6287872750080
 
-![This is an image](https://raw.githubusercontent.com/xyoruz/scriptvpn/refs/heads/main/IMG_20241025_005540_953.jpg)
+![This is an image](https://raw.githubusercontent.com/xyoruz/scriptvpn/refs/heads/main/IMG_20241025_143053_373.jpg)
 
 ### INSTALL SCRIPT 
 ```
