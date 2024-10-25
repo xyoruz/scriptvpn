@@ -9,10 +9,9 @@
 </p>
 
 
-### ORDER/SEWA SCRIPT TUNNELING
+### GRUP VPN JOIN🔥
 CONTACT:
-Telegram: t.me/@STORE_HANZZ
-Wa: wa.me/+6287872750080
+Telegram: [t.me/@XaillaStore](https://t.me/Xyoruz)
 
 ![This is an image](https://raw.githubusercontent.com/xyoruz/scriptvpn/refs/heads/main/IMG_20241025_143053_373.jpg)
 
@@ -24,23 +23,6 @@ apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubu
 ## UPDATE SCRIPT
 ```
 wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/update.sh && chmod +x update.sh && ./update.sh
-```
-
-### SETTING CLOUDFLARE
-```
-- SSL/TLS : FULL
-- SSL/TLS Recommender : OFF
-- GRPC : ON
-- WEBSOCKET : ON
-- Always Use HTTPS : OFF
-- UNDER ATTACK MODE : OFF
-```
-### INFO PORT
-```
-- PORT WEBSOCKET » 80
-- PORT TLS / SSL » 443
-- PORT HANCED WS » 80 » 8080
-- PORT NOOBZVPN  » 2082 » 8880  
 ```
 ### `WARNING !`
 ```
