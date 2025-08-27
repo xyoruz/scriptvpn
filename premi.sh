@@ -61,10 +61,11 @@ else
     echo -e "${OK} IP Address ( ${green}$IP${NC} )"
 fi
 
-# Validasi Berhasil
+# Validasi Berhasil - Otomatis lanjut tanpa input
 echo ""
-read -p "$(echo -e "Tekan ${GRAY}[ ${NC}${green}Enter${NC} ${GRAY}]${NC} Untuk Memulai Instalasi") "
+echo -e "${OK} Memulai instalasi otomatis..."
 echo ""
+sleep 2
 clear
 
 # Cek Root
@@ -215,45 +216,26 @@ function base_package() {
     print_success "Packet Yang Dibutuhkan"
 }
 
-# Fungsi input domain
+# Fungsi domain otomatis - tanpa input
 function pasang_domain() {
     echo -e ""
     clear
-    echo -e "   .----------------------------------."
-    echo -e "   |\e[1;32mSilakan Pilih Tipe Domain Dibawah \e[0m|"
-    echo -e "   '----------------------------------'"
-    echo -e "     \e[1;32m1)\e[0m Menggunakan Domain Sendiri"
-    echo -e "     \e[1;32m2)\e[0m Menggunakan Domain Script"
-    echo -e "   ------------------------------------"
-    read -p "   Silakan pilih angka 1-2 atau Tombol Lain (Random) : " host
-    echo ""
+    print_install "Menggunakan Domain Script (Otomatis)"
     
-    if [[ $host == "1" ]]; then
-        echo -e "   \e[1;32mMasukkan Subdomain Anda $NC"
-        read -p "   Subdomain: " host1
-        echo "IP=" >> /var/lib/kyt/ipvps.conf
-        echo $host1 > /etc/xray/domain
-        echo $host1 > /root/domain
-        echo ""
-    elif [[ $host == "2" ]]; then
-        #install cf
-        wget ${REPO}files/cf.sh && chmod +x cf.sh && ./cf.sh
-        rm -f /root/cf.sh
-        clear
-    else
-        print_install "Menggunakan Subdomain/Domain Random"
-        clear
-    fi
+    #install cf otomatis
+    wget ${REPO}files/cf.sh && chmod +x cf.sh && ./cf.sh
+    rm -f /root/cf.sh
+    clear
 }
 
-# Ganti Password Default
+# Ganti Password Default otomatis
 function password_default() {
     # Password default
     echo "root:xyrtunnel123" | chpasswd
     print_success "Password default diatur"
 }
 
-# Pasang SSL
+# Pasang SSL otomatis
 function pasang_ssl() {
     clear
     print_install "Memasang SSL Pada Domain"
@@ -394,8 +376,6 @@ EOF
     print_success "Konfigurasi Packet"
 }
 
-# ... (lanjutkan dengan fungsi-fungsi lainnya yang disederhanakan)
-
 # Fungsi Install Script utama
 function instal(){
     clear
@@ -427,6 +407,7 @@ rm -rf /root/README.md
 rm -rf /root/domain
 
 # Set hostname
+username="xray-server"  # Default hostname
 sudo hostnamectl set-hostname $username
 echo ""
 echo "------------------------------------------------------------"
@@ -449,13 +430,7 @@ echo ""
 echo "===============-[ SCRIP BY XYR TUNNEL ]-==============="
 echo -e ""
 
-echo -ne "[ ${YELLOW}SELESAI${NC} ] PENGINSTALAN SCRIPT SELESAI. REBOOT SEKARANG? (y/n)? "
-read answer
-if [ "$answer" == "${answer#[Yy]}" ] ; then
-    echo "Instalasi selesai tanpa reboot"
-    exit 0
-else
-    echo "System akan reboot dalam 3 detik..."
-    sleep 3
-    reboot
-fi
+# Otomatis reboot tanpa konfirmasi
+echo "System akan reboot dalam 3 detik..."
+sleep 3
+reboot
