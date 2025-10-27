@@ -1,4 +1,4 @@
-### SCRIPT NORMAL FREE
+### SCRIPT VPN FREE SILAHKAN TETS
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=S+C+R+I+P+T+ㅤBYㅤ+XYRVPN+S+T+O+R+E" />
@@ -11,7 +11,7 @@
 
 ### GRUP VPN JOIN🔥
 CONTACT:
-Telegram: [t.me/@XaillaStore](https://t.me/Xyoruz)
+Telegram: [t.me/@XaillaStore](https://t.me/Xaillaz)
 
 ![This is an image](https://raw.githubusercontent.com/xyoruz/scriptvpn/refs/heads/main/IMG_20241025_143053_373.jpg)
 
@@ -24,7 +24,7 @@ apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubu
 ```
 wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/update.sh && chmod +x update.sh && ./update.sh
 ```
-### `WARNING !`
+### `DENGERIN DULU CUY !`
 ```
 Jika Mendapatkan Status Service Off
 Silahkan Restart Service.
