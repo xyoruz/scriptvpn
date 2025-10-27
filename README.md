@@ -13,8 +13,6 @@
 CONTACT:
 Telegram: [t.me/@XaillaStore](https://t.me/Xaillaz)
 
-![This is an image](https://raw.githubusercontent.com/xyoruz/scriptvpn/refs/heads/main/IMG_20241025_143053_373.jpg)
-
 ### INSTALL SCRIPT 
 ```
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/premi.sh && chmod +x premi.sh && ./premi.sh
