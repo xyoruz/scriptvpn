@@ -19,6 +19,13 @@ Telegram: [t.me/@XaillaStore](https://t.me/Xaillaz)
 ```
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/premi.sh && chmod +x premi.sh && ./premi.sh
 ```
+### INSTALASI SERVER 2 SUPPPORT DEBIAN 10+/UBUNTU 18.XX+ TERBARU TETS LAH :D
+
+```
+apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/premi2.sh && chmod +x premi2.sh && ./premi2.sh
+```
+### PILIH SALA SATU NYA SAJA PENGINSTALAN YANG PASTI NO 1 UDH TESTES DEBIAN 10/UBUNTU 20.04
+### NOMER 2 TETS SAJA KAWAN :D
 
 ## UPDATE SCRIPT
 ```
