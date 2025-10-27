@@ -29,7 +29,7 @@ clear
 
 # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e " WELCOME Xaillaz AUTOSCRIPT PREMIUM${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
+echo -e " WELCOME VNZ AUTOSCRIPT PREMIUM${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
 echo -e " PROSES PENGECEKAN IP ADDRESS ANDA !!"
 echo -e "${purple}----------------------------------------------------------${NC}"
 echo -e " ›AUTHOR : ${green}Vnz ${NC}${YELLOW}(${NC}${green}V 3.2${NC}${YELLOW})${NC}"
@@ -85,7 +85,7 @@ apt install ruby -y
 gem install lolcat
 apt install wondershaper -y
 clear
-# REPO    
+# REPO - DIUBAH KE xyoruz/scriptvpn
     REPO="https://raw.githubusercontent.com/xyoruz/scriptvpn/main/"
 
 ####
@@ -387,7 +387,7 @@ clear
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version $latest_version
 
-    # // Ambil Config Server
+    # // Ambil Config Server - DIUBAH KE REPO xyoruz
     wget -O /etc/xray/config.json "${REPO}config/config.json" >/dev/null 2>&1
     wget -O /etc/systemd/system/runn.service "${REPO}files/runn.service" >/dev/null 2>&1
     #chmod +x /usr/local/bin/xray
@@ -512,6 +512,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit IP & Quota"
+# DIUBAH KE REPO xyoruz
 wget -q https://raw.githubusercontent.com/xyoruz/scriptvpn/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
