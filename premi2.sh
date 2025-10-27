@@ -382,8 +382,8 @@ restart_system(){
     fi
 
     TIMES="10"
-    CHATID="-1002156905690"
-    KEY="7131481321:AAGI3LtovNqUG65-Uf9aMM93n_RzrCRg8Oo"
+    CHATID="-6212566366"
+    KEY="8389655317:AAF8FVjWxxKpHzgQbStPHexjENC07PNC1uY"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     ISP=$(cat /root/.isp)
     CITY=$(cat /root/.city)
@@ -404,7 +404,7 @@ restart_system(){
 <code>────────────────────</code>
 <i>Automatic Notifications From Github</i>
 <i>Script Version 1.0 Stable</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/VnzVM"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/Xaillaz"}]]}'
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
