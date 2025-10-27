@@ -36,7 +36,7 @@ echo -e " WELCOME Xaillaz AUTOSCRIPT PREMIUM${YELLOW}(${NC}${green}Stable Editio
 echo -e " PROSES PENGECEKAN IP ADDRESS ANDA !!"
 echo -e "${purple}----------------------------------------------------------${NC}"
 echo -e " ›AUTHOR : ${green}Xaillaz ${NC}${YELLOW}(${NC}${green}V 3.2${NC}${YELLOW})${NC}"
-echo -e " ›TEAM : Xaillaz STORE ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e " ›TEAM : Xaillaz STORE ${YELLOW}(${NC} 2026 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
