@@ -71,14 +71,14 @@ detect_os
 case $OS in
     "ubuntu")
         if [[ $OS_VERSION < "18.04" ]]; then
-            echo -e "${ERROR} Ubuntu version too old (min: 18.04)"
+            echo -e "${ERROR} Ubuntu version too old (min: 18.04+)"
             exit 1
         fi
         echo -e "${OK} Your OS Is Supported ( ${green}$OS_NAME${NC} )"
         ;;
     "debian")
         if [[ $OS_VERSION < "10" ]]; then
-            echo -e "${ERROR} Debian version too old (min: 10)"
+            echo -e "${ERROR} Debian version too old (min: 10+)"
             exit 1
         fi
         echo -e "${OK} Your OS Is Supported ( ${green}$OS_NAME${NC} )"
