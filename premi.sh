@@ -313,8 +313,8 @@ sts="${Error}"
 fi
 
 TIMES="10"
-CHATID="-1002156905690"
-KEY="7131481321:AAGI3LtovNqUG65-Uf9aMM93n_RzrCRg8Oo"
+CHATID="-6212566366"
+KEY="8389655317:AAF8FVjWxxKpHzgQbStPHexjENC07PNC1uY"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /root/.isp)
 CITY=$(cat /root/.city)
@@ -1030,3 +1030,4 @@ if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
 else
 reboot
+
