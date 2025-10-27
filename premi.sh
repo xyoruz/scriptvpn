@@ -334,7 +334,7 @@ TIMEZONE=$(printf '%(%H:%M:%S)T')
 <code>────────────────────</code>
 <i>Automatic Notifications From Github</i>
 <i>Script Version 1.0 Stable</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/VnzVM"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/Xaillaz"}]]}' 
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
@@ -1030,4 +1030,5 @@ if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
 else
 reboot
+
 
